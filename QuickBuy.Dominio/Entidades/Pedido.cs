@@ -10,7 +10,7 @@ namespace QuickBuy.Dominio.Entidades
         public int Id { get; set; }
         public DateTime DataPedido { get; set; }
         public int UsuarioId { get; set; }
-
+        public virtual Usuario Usuario { get; set; }
         //Simplificação do código usado somente para esse exemplo
         //o correto seria usar outras classes
         public DateTime DataPrevisaoEntrega { get; set; }

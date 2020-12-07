@@ -1,0 +1,6 @@
+{
+  "ConnectionString": {
+    "SqlServerConnection": "",
+    "QuickBuyDB": "Server=remotemysql.com;Port=3306;Database=vSEllJdJBO;Uid=vSEllJdJBO;Pwd=TVWv6zPFTZ;"
+  }
+}
