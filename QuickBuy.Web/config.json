@@ -1,6 +1,12 @@
 {
-  "ConnectionString": {
-    "SqlServerConnection": "",
-    "QuickBuyDB": "Server=remotemysql.com;Port=3306;Database=vSEllJdJBO;Uid=vSEllJdJBO;Pwd=TVWv6zPFTZ;"
+  "ConnectionStrings": {
+    "QuickBuyDb": "Server=localhost;Database=QuickBuyDb;User Id=sa;Password=buci;MultipleActiveResultSets=true;Encrypt=YES;TrustServerCertificate=YES"
+  },
+  "Logging": {
+    "LogLevel": {
+      "Default": "Debug",
+      "System": "Information",
+      "Microsoft": "Information"
+    }
   }
 }
