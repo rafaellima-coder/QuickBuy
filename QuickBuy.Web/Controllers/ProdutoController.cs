@@ -18,7 +18,7 @@ namespace QuickBuy.Web.Controllers
         {
             try
             {
-                return Ok();
+                return Ok(_produtoRepositorio.ObterTodos());
                 //if (condicao = false)
                 //{
                 //    return BadRequest("");
