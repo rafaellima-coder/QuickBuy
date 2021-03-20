@@ -14,6 +14,7 @@ export class LoginComponent implements OnInit {
   public titulo = " imagem teste";
   public usuario;
   public returnUlr: string;
+  public mensagem: string;
 
 
   constructor(private router: Router,
@@ -32,10 +33,20 @@ export class LoginComponent implements OnInit {
       .subscribe(
         data =>
         {
+          var usuarioRetorno: Usuario;
+          usuarioRetorno = data;
+          sessionStorage.setItem("usuario-autenticado", "1");
+          sessionStorage.setItem("email-usuario", usuarioRetorno.email);
+          if (this.returnUlr == null)
+          {
+            this.router.navigate(['/']);
+          }
+          else
+            this.router.navigate([this.returnUlr]);
         },
         err =>
         {
-
+          this.mensagem = err.error;
         }
       );
     //if (this.usuario.email == "rafael@teste.com" && this.usuario.senha == "abc123") {
