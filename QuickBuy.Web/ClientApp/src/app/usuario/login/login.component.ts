@@ -16,7 +16,6 @@ export class LoginComponent implements OnInit {
   public returnUlr: string;
   public mensagem: string;
 
-
   constructor(private router: Router,
     private activatedRouter: ActivatedRoute,
     private usuarioServico: UsuarioServico) {
